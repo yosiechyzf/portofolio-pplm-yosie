@@ -1,114 +1,70 @@
-
-// ===================================
-// E-PORTFOLIO YOSIE ZAHRA FADILLA
-// ===================================
-
-
-// 1. MENU NAVIGASI MOBILE
+// ==============================
+// MOBILE NAVIGATION
+// ==============================
 
 const menuToggle = document.getElementById("menuToggle");
-const navigation = document.getElementById("navigation");
+const navMenu = document.getElementById("navMenu");
 
-if (menuToggle && navigation) {
+if (menuToggle && navMenu) {
 
-  menuToggle.addEventListener("click", () => {
-
-    const isOpen =
-      menuToggle.getAttribute("aria-expanded") === "true";
-
-    menuToggle.setAttribute(
-      "aria-expanded",
-      String(!isOpen)
-    );
-
-    navigation.classList.toggle("open", !isOpen);
-
-  });
-
-  navigation.querySelectorAll("a").forEach((link) => {
-
-    link.addEventListener("click", () => {
-
-      navigation.classList.remove("open");
-
-      menuToggle.setAttribute(
-        "aria-expanded",
-        "false"
-      );
-
+    menuToggle.addEventListener("click", function () {
+        navMenu.classList.toggle("active");
     });
 
-  });
+    // Tutup menu setelah salah satu navigasi diklik
+    const navLinks = navMenu.querySelectorAll("a");
 
+    navLinks.forEach(function (link) {
+        link.addEventListener("click", function () {
+            navMenu.classList.remove("active");
+        });
+    });
+
+    // Tutup menu jika pengguna klik di luar navigasi
+    document.addEventListener("click", function (event) {
+        const clickedInsideMenu = navMenu.contains(event.target);
+        const clickedToggle = menuToggle.contains(event.target);
+
+        if (!clickedInsideMenu && !clickedToggle) {
+            navMenu.classList.remove("active");
+        }
+    });
 }
 
 
-// 2. VIDEO MENGAJAR
+// ==============================
+// AUTOMATIC COPYRIGHT YEAR
+// ==============================
 
-// Untuk YouTube gunakan URL embed.
-// Contoh:
-// https://www.youtube.com/embed/ID_VIDEO
+const currentYear = document.getElementById("currentYear");
 
-// Untuk video lokal:
-// assets/videos/video-mengajar.mp4
-
-const VIDEO_URL = "";
-
-const videoFrame = document.getElementById("videoFrame");
-
-
-function renderTeachingVideo(url) {
-
-  if (!videoFrame || !url.trim()) return;
-
-  const cleanUrl = url.trim();
-
-  videoFrame.innerHTML = "";
-
-  // Jika video lokal
-  if (
-    cleanUrl.endsWith(".mp4") ||
-    cleanUrl.endsWith(".webm") ||
-    cleanUrl.endsWith(".ogg")
-  ) {
-
-    const video = document.createElement("video");
-
-    video.src = cleanUrl;
-    video.controls = true;
-    video.preload = "metadata";
-    video.playsInline = true;
-
-    videoFrame.appendChild(video);
-
-    return;
-
-  }
-
-
-  // Jika video dari YouTube
-  const iframe = document.createElement("iframe");
-
-  iframe.src = cleanUrl;
-  iframe.title = "Video Praktik Mengajar Yosie Zahra Fadilla";
-
-  iframe.allow =
-    "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";
-
-  iframe.allowFullscreen = true;
-  iframe.loading = "lazy";
-
-  videoFrame.appendChild(iframe);
-
+if (currentYear) {
+    currentYear.textContent = new Date().getFullYear();
 }
 
 
-// Jalankan video
-renderTeachingVideo(VIDEO_URL);
+// ==============================
+// SMOOTH SCROLL
+// ==============================
 
+document.querySelectorAll('a[href^="#"]').forEach(function (link) {
 
-// 3. KONSOL
+    link.addEventListener("click", function (event) {
 
-console.log(
-  "E-Portfolio Yosie Zahra Fadilla berhasil dimuat."
-);
+        const targetId = this.getAttribute("href");
+
+        if (targetId === "#") return;
+
+        const targetElement = document.querySelector(targetId);
+
+        if (targetElement) {
+            event.preventDefault();
+
+            targetElement.scrollIntoView({
+                behavior: "smooth",
+                block: "start"
+            });
+        }
+    });
+
+});
