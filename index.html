@@ -1,394 +1,456 @@
-
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="E-Portfolio Pembelajaran Yosie Zahra Fadilla">
-  <title>E-Portfolio | Yosie Zahra Fadilla</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="E-Portfolio Yosie Zahra Fadilla - Dokumentasi rancangan dan praktik pembelajaran PPL.">
+    <title>E-Portfolio | Yosie Zahra Fadilla</title>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,600;1,700&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
 
-<header class="site-header">
-  <a class="brand" href="#beranda">
-    <span class="brand-mark">Y</span>
-    <span class="brand-name">Yosie Zahra Fadilla<span class="brand-dot">.</span></span>
-  </a>
+    <!-- NAVIGATION -->
+    <header class="header">
+        <nav class="navbar container">
+            <a href="#home" class="logo">
+                <span class="logo-mark">Y</span>
+                <span>Yosie<span class="logo-accent">.</span></span>
+            </a>
 
-  <button class="menu-toggle" id="menuToggle" aria-label="Buka menu" aria-expanded="false">
-    <span></span><span></span><span></span>
-  </button>
+            <button class="menu-toggle" id="menuToggle" aria-label="Buka navigasi">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
 
-  <nav class="navigation" id="navigation">
-    <a href="#tentang">About</a>
-    <a href="#siklus">Siklus Pembelajaran</a>
-    <a href="#modul">Modul Ajar</a>
-    <a href="#bahan-ajar">Bahan Ajar</a>
-    <a href="#video" class="nav-cta">Video Mengajar ↗</a>
-  </nav>
-</header>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#siklus">Siklus Pembelajaran</a></li>
+                <li><a href="#modul">Modul Ajar</a></li>
+                <li><a href="#bahan">Bahan Ajar</a></li>
+                <li><a href="#video" class="nav-cta">Video Mengajar ↗</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<main>
 
-<!-- HERO -->
-<section class="hero section-shell" id="beranda">
-  <div class="hero-copy">
-    <div class="eyebrow">
-      <span class="eyebrow-line"></span>
-      E-PORTFOLIO PEMBELAJARAN
-    </div>
+    <main>
 
-    <h1>
-      Mengajar dengan <span>tujuan.</span><br>
-      Belajar dengan makna.
-    </h1>
+        <!-- HERO -->
+        <section class="hero" id="home">
+            <div class="hero-decoration decoration-one"></div>
+            <div class="hero-decoration decoration-two"></div>
 
-    <p class="hero-description">
-      Portofolio pembelajaran Yosie Zahra Fadilla.
-      Dokumentasi perjalanan merancang, melaksanakan,
-      dan mengembangkan pembelajaran pada program PPG.
-    </p>
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <div class="eyebrow">
+                        <span class="eyebrow-dot"></span>
+                        E-PORTFOLIO PRAKTIK PENGALAMAN LAPANGAN
+                    </div>
 
-    <div class="hero-actions">
-      <a href="#siklus" class="button button-primary">Jelajahi Portofolio ↓</a>
-      <a href="#tentang" class="button button-secondary">Tentang Saya</a>
-    </div>
+                    <h1>
+                        Learning is a journey,
+                        <span>teaching is a meaningful story.</span>
+                    </h1>
 
-    <div class="hero-note">
-      <span class="note-dot"></span>
-      Refleksi · Inovasi · Pertumbuhan
-    </div>
-  </div>
+                    <p class="hero-description">
+                        Dokumentasi perjalanan pembelajaran, perencanaan,
+                        pengembangan perangkat ajar, dan praktik mengajar
+                        sebagai bagian dari proses menjadi pendidik profesional.
+                    </p>
 
-  <div class="hero-visual">
-    <div class="visual-backdrop"></div>
+                    <div class="hero-buttons">
+                        <a href="#siklus" class="button button-primary">
+                            Jelajahi Portofolio <span>↗</span>
+                        </a>
+                        <a href="#about" class="button button-outline">
+                            Tentang Saya
+                        </a>
+                    </div>
 
-    <div class="main-card">
-      <div class="card-topline">
-        <span>PORTFOLIO / 2026</span>
-        <span class="mini-star">✳</span>
-      </div>
+                    <div class="hero-caption">
+                        <span class="caption-line"></span>
+                        <span>Reflect · Create · Inspire</span>
+                    </div>
+                </div>
 
-      <div class="visual-title">
-        A journey of<br>
-        <em>teaching & learning.</em>
-      </div>
+                <div class="hero-visual">
+                    <div class="hero-photo-card">
+                        <div class="photo-top-label">MY TEACHING JOURNEY</div>
 
-      <div class="visual-rule"></div>
+                        <div class="hero-photo">
+                            <img src="./foto%20profil.jpeg"
+                                 alt="Foto profil Yosie Zahra Fadilla"
+                                 onerror="this.style.display='none'; this.parentElement.classList.add('photo-fallback');">
+                            <span class="photo-fallback-text">Y</span>
+                        </div>
 
-      <div class="visual-bottom">
-        <span>YOSIE ZAHRA FADILLA</span>
-        <span>02 — 04</span>
-      </div>
-    </div>
+                        <div class="photo-bottom">
+                            <div>
+                                <h3>Yosie Zahra Fadilla</h3>
+                                <p>Future Educator</p>
+                            </div>
+                            <span class="photo-star">✳</span>
+                        </div>
+                    </div>
 
-    <div class="floating-tag tag-top">✦ Rancangan Pembelajaran</div>
-    <div class="floating-tag tag-bottom">↗ Dokumentasi Praktik</div>
-  </div>
-</section>
+                    <div class="floating-note note-top">
+                        <span class="note-icon">✦</span>
+                        <div>
+                            <strong>Keep Growing</strong>
+                            <small>Every lesson matters</small>
+                        </div>
+                    </div>
 
-<!-- ABOUT -->
-<section class="about-section section-shell" id="tentang">
-  <div class="section-kicker">01 / ABOUT</div>
+                    <div class="floating-note note-bottom">
+                        <span class="note-icon">♡</span>
+                        <div>
+                            <strong>Teaching Portfolio</strong>
+                            <small>Learning documentation</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-  <div class="about-grid">
-    <div class="about-profile">
-      <div class="profile-photo-wrap">
-        <img
-          src="./foto%20profil.jpeg"
-          alt="Foto profil Yosie Zahra Fadilla"
-          class="profile-photo">
-      </div>
+            <div class="hero-bottom container">
+                <span>PORTFOLIO 2026</span>
+                <span>EDUCATION · CREATIVITY · REFLECTION</span>
+            </div>
+        </section>
 
-      <h2>
-        Halo, saya<br>
-        <span class="serif-accent">Yosie Zahra Fadilla.</span>
-      </h2>
 
-      <div class="profile-identity">
-        <span>MAHASISWA PPG</span>
-        <strong>Broadcasting dan Perfilman</strong>
-        <small>Universitas Negeri Surabaya</small>
-      </div>
-    </div>
+        <!-- ABOUT -->
+        <section class="section about-section" id="about">
+            <div class="container">
+                <div class="section-heading">
+                    <span class="section-label">01 — ABOUT ME</span>
+                    <h2>A little introduction <em>about me.</em></h2>
+                    <p>
+                        Mengenal pribadi, perjalanan, dan semangat saya
+                        dalam mengembangkan diri sebagai seorang pendidik.
+                    </p>
+                </div>
 
-    <div class="about-content">
-      <p class="about-lead">
-        Bagi saya, pembelajaran adalah proses bertumbuh—
-        bagi peserta didik maupun pendidik.
-      </p>
+                <div class="about-grid">
+                    <div class="about-image-card">
+                        <img src="./foto%20profil.jpeg"
+                             alt="Yosie Zahra Fadilla"
+                             onerror="this.style.display='none'; this.parentElement.classList.add('photo-fallback');">
+                        <div class="image-tag">THE PERSON BEHIND THE LESSONS</div>
+                    </div>
 
-      <p>
-        Portofolio ini menjadi ruang dokumentasi untuk
-        menampilkan rancangan pembelajaran, perangkat ajar,
-        bahan presentasi, serta video praktik mengajar.
-        Setiap bagian merekam proses merencanakan, mencoba,
-        mengevaluasi, dan memperbaiki pembelajaran
-        secara berkelanjutan.
-      </p>
+                    <div class="about-content">
+                        <span class="small-heading">HELLO, NICE TO MEET YOU!</span>
+                        <h3>Yosie Zahra <em>Fadilla.</em></h3>
 
-      <div class="about-values">
-        <div>
-          <span>01</span>
-          <strong>Terencana</strong>
-          <small>Tujuan belajar yang jelas</small>
+                        <p>
+                            Selamat datang di e-portfolio saya. Halaman ini
+                            merupakan ruang dokumentasi perjalanan praktik
+                            pembelajaran, mulai dari proses perencanaan,
+                            pelaksanaan, hingga refleksi dan pengembangan
+                            pembelajaran.
+                        </p>
+
+                        <p>
+                            Melalui portofolio ini, saya ingin memperlihatkan
+                            proses belajar dan pengalaman dalam merancang
+                            pembelajaran yang bermakna, kreatif, serta
+                            memperhatikan kebutuhan peserta didik.
+                        </p>
+
+                        <div class="about-signature">
+                            <span class="signature-line"></span>
+                            <span>Learning with purpose, teaching with heart.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- SIKLUS PEMBELAJARAN -->
+        <section class="section cycle-section" id="siklus">
+            <div class="container">
+                <div class="section-heading centered">
+                    <span class="section-label">02 — LEARNING JOURNEY</span>
+                    <h2>Rancangan <em>Pembelajaran.</em></h2>
+                    <p>
+                        Dokumentasi rancangan dan pengembangan pembelajaran
+                        dalam setiap siklus praktik mengajar.
+                    </p>
+                </div>
+
+                <div class="cycle-grid">
+
+                    <article class="cycle-card">
+                        <div class="cycle-card-top">
+                            <span class="cycle-number">02</span>
+                            <span class="cycle-type">LEARNING DESIGN</span>
+                        </div>
+
+                        <div class="cycle-icon">✎</div>
+                        <h3>Siklus 2</h3>
+                        <p>
+                            Dokumentasi rancangan pembelajaran dan
+                            pengembangan strategi pembelajaran pada siklus kedua.
+                        </p>
+
+                        <a href="./siklus%202.pdf"
+                           target="_blank"
+                           rel="noopener"
+                           class="text-link">
+                            Lihat Rancangan <span>↗</span>
+                        </a>
+                    </article>
+
+
+                    <article class="cycle-card featured-cycle">
+                        <div class="cycle-card-top">
+                            <span class="cycle-number">03</span>
+                            <span class="cycle-type">LEARNING DESIGN</span>
+                        </div>
+
+                        <div class="cycle-icon">✧</div>
+                        <h3>Siklus 3</h3>
+                        <p>
+                            Dokumentasi proses perencanaan dan penyempurnaan
+                            pembelajaran pada siklus ketiga.
+                        </p>
+
+                        <a href="./siklus%203.pdf"
+                           target="_blank"
+                           rel="noopener"
+                           class="text-link">
+                            Lihat Rancangan <span>↗</span>
+                        </a>
+                    </article>
+
+
+                    <article class="cycle-card">
+                        <div class="cycle-card-top">
+                            <span class="cycle-number">04</span>
+                            <span class="cycle-type">LEARNING DESIGN</span>
+                        </div>
+
+                        <div class="cycle-icon">♡</div>
+                        <h3>Siklus 4</h3>
+                        <p>
+                            Dokumentasi rancangan pembelajaran sebagai
+                            bagian dari proses evaluasi dan pengembangan.
+                        </p>
+
+                        <a href="./siklus%204.pdf"
+                           target="_blank"
+                           rel="noopener"
+                           class="text-link">
+                            Lihat Rancangan <span>↗</span>
+                        </a>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- MODUL AJAR -->
+        <section class="section module-section" id="modul">
+            <div class="container">
+                <div class="module-wrapper">
+                    <div class="module-content">
+                        <span class="section-label">03 — TEACHING MODULE</span>
+                        <h2>Modul Ajar <em>Pembelajaran.</em></h2>
+
+                        <p>
+                            Modul ajar menjadi salah satu perangkat penting
+                            dalam proses pembelajaran. Bagian ini memuat
+                            dokumen perencanaan pembelajaran yang digunakan
+                            sebagai panduan dalam melaksanakan kegiatan belajar.
+                        </p>
+
+                        <div class="module-points">
+                            <div><span>01</span> Perencanaan pembelajaran</div>
+                            <div><span>02</span> Tujuan dan kegiatan pembelajaran</div>
+                            <div><span>03</span> Asesmen pembelajaran</div>
+                        </div>
+
+                        <a href="./MODUL%20AJAR%20SOP%20AUDIOVISUAL%20X%20PSPT.pdf"
+                           target="_blank"
+                           rel="noopener"
+                           class="button button-primary">
+                            Buka Modul Ajar <span>↗</span>
+                        </a>
+                    </div>
+
+                    <div class="module-art">
+                        <div class="document-illustration">
+                            <div class="doc-top">
+                                <span class="doc-symbol">✳</span>
+                                <span>TEACHING MODULE</span>
+                            </div>
+                            <div class="doc-title-line"></div>
+                            <div class="doc-title-line short"></div>
+                            <div class="doc-divider"></div>
+                            <div class="doc-line"></div>
+                            <div class="doc-line"></div>
+                            <div class="doc-line medium"></div>
+                            <div class="doc-line"></div>
+                            <div class="doc-line short"></div>
+                            <div class="doc-stamp">MODUL<br>AJAR</div>
+                        </div>
+                        <span class="art-caption">Plan with purpose.</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- BAHAN AJAR -->
+        <section class="section material-section" id="bahan">
+            <div class="container">
+                <div class="section-heading">
+                    <span class="section-label">04 — LEARNING MATERIALS</span>
+                    <h2>Bahan Ajar <em>Pembelajaran.</em></h2>
+                    <p>
+                        Materi pembelajaran yang digunakan untuk mendukung
+                        penyampaian materi dan membantu peserta didik
+                        memahami kompetensi yang dipelajari.
+                    </p>
+                </div>
+
+                <div class="material-card">
+                    <div class="material-preview">
+                        <div class="ppt-window">
+                            <div class="ppt-top">
+                                <span></span><span></span><span></span>
+                            </div>
+                            <div class="ppt-content">
+                                <span class="ppt-kicker">BAHAN AJAR</span>
+                                <h3>SOP<br><em>Peralatan Audiovisual</em></h3>
+                                <div class="ppt-decoration">✳</div>
+                                <span class="ppt-footer">PRESENTATION MATERIAL</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="material-info">
+                        <span class="small-heading">PRESENTATION / POWERPOINT</span>
+                        <h3>PPT SOP Peralatan Audiovisual</h3>
+                        <p>
+                            Bahan ajar berbentuk presentasi yang membahas
+                            standar operasional prosedur penggunaan
+                            peralatan audiovisual sebagai pendukung
+                            kegiatan pembelajaran.
+                        </p>
+
+                        <div class="file-meta">
+                            <span>PDF PRESENTATION</span>
+                            <span>•</span>
+                            <span>Learning Material</span>
+                        </div>
+
+                        <a href="./PPT%20SOP%20PERALATAN%20AUDIOVISUAL.pdf"
+                           target="_blank"
+                           rel="noopener"
+                           class="button button-primary">
+                            Lihat Bahan Ajar <span>↗</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- VIDEO MENGAJAR -->
+        <section class="section video-section" id="video">
+            <div class="container">
+                <div class="section-heading centered">
+                    <span class="section-label">05 — TEACHING DOCUMENTATION</span>
+                    <h2>Video Praktik <em>Mengajar.</em></h2>
+                    <p>
+                        Dokumentasi pelaksanaan praktik mengajar sebagai
+                        gambaran penerapan rancangan pembelajaran di kelas.
+                    </p>
+                </div>
+
+                <div class="video-card">
+                    <div class="video-header">
+                        <div>
+                            <span class="video-live-dot"></span>
+                            <span>TEACHING PRACTICE</span>
+                        </div>
+                        <span class="video-year">2026</span>
+                    </div>
+
+                    <div class="video-frame">
+                        <iframe
+                            src="https://drive.google.com/file/d/10IYHG_717DeyxSrvQJA6AWr3Y7oRhxWz/preview"
+                            title="Video Praktik Mengajar Yosie Zahra Fadilla"
+                            allow="autoplay; fullscreen"
+                            allowfullscreen
+                            loading="lazy">
+                        </iframe>
+                    </div>
+
+                    <div class="video-caption">
+                        <div>
+                            <h3>Pelaksanaan Praktik Pembelajaran</h3>
+                            <p>Yosie Zahra Fadilla · Dokumentasi PPL</p>
+                        </div>
+
+                        <a href="https://drive.google.com/file/d/10IYHG_717DeyxSrvQJA6AWr3Y7oRhxWz/view"
+                           target="_blank"
+                           rel="noopener"
+                           class="video-open-link">
+                            Buka di Google Drive ↗
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- CLOSING -->
+        <section class="closing-section">
+            <div class="container closing-content">
+                <span class="closing-star">✳</span>
+                <span class="section-label">A JOURNEY OF GROWTH</span>
+                <h2>Every experience is a chance <em>to grow.</em></h2>
+                <p>
+                    Terima kasih telah mengunjungi e-portfolio saya.
+                    Semoga setiap proses pembelajaran menjadi langkah
+                    untuk terus berkembang dan memberikan makna.
+                </p>
+                <a href="#home" class="button button-light">
+                    Kembali ke Atas ↑
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container footer-inner">
+            <a href="#home" class="logo footer-logo">
+                <span class="logo-mark">Y</span>
+                <span>Yosie<span class="logo-accent">.</span></span>
+            </a>
+
+            <p>© <span id="currentYear">2026</span> Yosie Zahra Fadilla. All rights reserved.</p>
+
+            <a href="#home" class="footer-top">Back to top ↑</a>
         </div>
-        <div>
-          <span>02</span>
-          <strong>Reflektif</strong>
-          <small>Belajar dari proses</small>
-        </div>
-        <div>
-          <span>03</span>
-          <strong>Berkembang</strong>
-          <small>Perbaikan berkelanjutan</small>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+    </footer>
 
-<!-- SIKLUS PEMBELAJARAN -->
-<section class="cycles-section section-shell" id="siklus">
-  <div class="section-heading">
-    <div>
-      <div class="section-kicker">02 / LEARNING DESIGN</div>
-      <h2>Rancangan <span class="serif-accent">Pembelajaran.</span></h2>
-    </div>
 
-    <p>
-      Dokumentasi tiga tahapan siklus pembelajaran
-      yang menggambarkan proses pengembangan,
-      pelaksanaan, evaluasi, dan penyempurnaan
-      praktik pembelajaran.
-    </p>
-  </div>
-
-  <div class="cycle-grid">
-
-    <article class="cycle-card">
-      <div class="cycle-number">02</div>
-      <div class="cycle-icon">↗</div>
-      <p class="card-label">SIKLUS KEDUA</p>
-      <h3>Pengembangan<br>Strategi Pembelajaran</h3>
-      <p class="card-description">
-        Dokumentasi rancangan pembelajaran,
-        pengembangan perangkat ajar, serta
-        strategi pembelajaran yang disusun
-        berdasarkan kebutuhan peserta didik.
-      </p>
-      <a class="text-link"
-         href="./siklus%202.pdf"
-         target="_blank" rel="noopener">
-        Lihat dokumen PDF <span>↗</span>
-      </a>
-    </article>
-
-    <article class="cycle-card">
-      <div class="cycle-number">03</div>
-      <div class="cycle-icon">✳</div>
-      <p class="card-label">SIKLUS KETIGA</p>
-      <h3>Implementasi<br>dan Evaluasi Pembelajaran</h3>
-      <p class="card-description">
-        Dokumentasi pelaksanaan pembelajaran,
-        penerapan strategi pembelajaran,
-        hasil evaluasi, serta refleksi
-        terhadap proses pembelajaran.
-      </p>
-      <a class="text-link"
-         href="./siklus%203.pdf"
-         target="_blank" rel="noopener">
-        Lihat dokumen PDF <span>↗</span>
-      </a>
-    </article>
-
-    <article class="cycle-card">
-      <div class="cycle-number">04</div>
-      <div class="cycle-icon">◎</div>
-      <p class="card-label">SIKLUS KEEMPAT</p>
-      <h3>Penyempurnaan<br>Praktik Pembelajaran</h3>
-      <p class="card-description">
-        Dokumentasi pengembangan praktik pembelajaran,
-        penerapan hasil perbaikan, refleksi,
-        serta rencana tindak lanjut pembelajaran.
-      </p>
-      <a class="text-link"
-         href="./siklus%204.pdf"
-         target="_blank" rel="noopener">
-        Lihat dokumen PDF <span>↗</span>
-      </a>
-    </article>
-
-  </div>
-</section>
-
-<!-- MODUL AJAR -->
-<section class="module-section section-shell" id="modul">
-  <div class="module-panel">
-
-    <div class="module-art">
-      <div class="paper paper-back"></div>
-      <div class="paper paper-front">
-        <div class="paper-mark">YZF / KELAS X PSPT</div>
-        <div class="paper-big">
-          SOP<br><span>AUDIOVISUAL</span>
-        </div>
-        <div class="paper-line"></div>
-        <div class="paper-caption">
-          Modul ajar penggunaan<br>
-          peralatan audiovisual.
-        </div>
-        <div class="paper-foot">DOKUMEN PEMBELAJARAN · 2026</div>
-      </div>
-    </div>
-
-    <div class="module-copy">
-      <div class="section-kicker">03 / TEACHING MODULE</div>
-
-      <h2>
-        Modul Ajar SOP<br>
-        <span class="serif-accent">Audiovisual.</span>
-      </h2>
-
-      <p>
-        Panduan pembelajaran kelas X PSPT untuk
-        mengenal, menggunakan, dan merawat
-        peralatan audiovisual sesuai prosedur
-        operasional standar (SOP).
-      </p>
-
-      <ul class="check-list">
-        <li><span>✓</span> Tujuan dan alur kegiatan pembelajaran</li>
-        <li><span>✓</span> Prosedur penggunaan alat audiovisual</li>
-        <li><span>✓</span> Asesmen, refleksi, dan tindak lanjut</li>
-      </ul>
-
-      <a class="button button-primary"
-         href="./MODUL%20AJAR%20SOP%20AUDIOVISUAL%20X%20PSPT.pdf"
-         target="_blank" rel="noopener">
-        Buka Modul Ajar ↗
-      </a>
-    </div>
-  </div>
-</section>
-
-<!-- BAHAN AJAR -->
-<section class="materials-section section-shell" id="bahan-ajar">
-  <div class="section-heading">
-    <div>
-      <div class="section-kicker">04 / LEARNING MATERIALS</div>
-      <h2>Bahan ajar <span class="serif-accent">visual.</span></h2>
-    </div>
-
-    <p>
-      Materi presentasi pendukung untuk memahami
-      SOP penggunaan peralatan audiovisual
-      secara runtut dan aman.
-    </p>
-  </div>
-
-  <div class="materials-grid">
-    <article class="material-card material-card-featured">
-
-      <div class="slide-preview preview-purple">
-        <span class="preview-small">PRESENTASI / SOP PERALATAN</span>
-        <span class="preview-symbol">✳</span>
-        <strong>
-          SOP Peralatan<br>
-          <em>Audiovisual</em>
-        </strong>
-        <span class="preview-footer">
-          YOSIE ZAHRA FADILLA / KELAS X PSPT
-        </span>
-      </div>
-
-      <div class="material-info">
-        <div>
-          <span class="file-type">PDF PRESENTASI</span>
-          <h3>SOP Peralatan Audiovisual</h3>
-        </div>
-
-        <a class="download-button"
-           href="./PPT%20SOP%20PERALATAN%20AUDIOVISUAL.pdf"
-           target="_blank" rel="noopener"
-           aria-label="Buka bahan ajar">
-          ↗
-        </a>
-      </div>
-    </article>
-
-    <aside class="material-outline" aria-label="Pokok bahasan">
-      <span class="file-type">POKOK BAHASAN</span>
-      <h3>Yang dipelajari peserta didik</h3>
-      <ol>
-        <li>Pengertian dan tujuan SOP peralatan audiovisual</li>
-        <li>Persiapan alat sebelum digunakan</li>
-        <li>Langkah penggunaan sesuai prosedur</li>
-        <li>Keselamatan kerja, perawatan, dan penyimpanan alat</li>
-      </ol>
-    </aside>
-  </div>
-</section>
-
-<!-- VIDEO MENGAJAR -->
-<section class="video-section section-shell" id="video">
-  <div class="video-heading">
-    <div class="section-kicker">05 / TEACHING PRACTICE</div>
-    <h2>Belajar dalam <span class="serif-accent">aksi.</span></h2>
-    <p>
-      Dokumentasi video praktik mengajar sebagai
-      gambaran penerapan rancangan pembelajaran
-      di kelas.
-    </p>
-  </div>
-
-  <div class="video-frame" id="videoFrame">
-    <div class="video-placeholder">
-      <div class="play-icon">▶</div>
-      <span class="video-overline">TEACHING PRACTICE</span>
-      <h3>Video Praktik Mengajar</h3>
-      <p>Tambahkan tautan video melalui script.js.</p>
-    </div>
-  </div>
-
-  <div class="video-caption">
-    <span>● DOKUMENTASI PEMBELAJARAN</span>
-    <span>VIDEO / 01</span>
-  </div>
-</section>
-
-<!-- PENUTUP -->
-<section class="closing-section section-shell">
-  <div class="closing-mark">“</div>
-  <p>
-    Setiap proses mengajar adalah kesempatan
-    untuk belajar kembali.
-  </p>
-  <span>YOSIE ZAHRA FADILLA · E-PORTFOLIO</span>
-</section>
-
-</main>
-
-<footer class="site-footer">
-  <a class="brand footer-brand" href="#beranda">
-    <span class="brand-mark">Y</span>
-    <span class="brand-name">
-      Yosie Zahra Fadilla<span class="brand-dot">.</span>
-    </span>
-  </a>
-
-  <p>Portofolio pembelajaran · 2026</p>
-  <a href="#beranda" class="back-top">Kembali ke atas ↑</a>
-</footer>
-
-<script src="./script.js"></script>
-
+    <script src="./script.js"></script>
 </body>
 </html>
